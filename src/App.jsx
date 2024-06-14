@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import .meta.env.VITE_API_KEY
+import.meta.env.VITE_API_KEY
 import MovieList from './Components/MovieList/MovieList.jsx'
 
 const App = () => {
