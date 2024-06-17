@@ -7,7 +7,6 @@ const App = () => {
   return (
     <div className="App">
       <h1>Flixster</h1>
-      
       <MovieList/>
     </div> 
   )
