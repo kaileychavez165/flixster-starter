@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import './MovieCard.css'
+import React, { useState, useEffect } from 'react';
+import './MovieCard.css';
 
-const MovieCard = (props) => {
+const MovieCard = ({cover, name, rating, onClick}) => {
   return (
     <>
-      <div className="MovieCard">
-        <img className="poster" src={`https://image.tmdb.org/t/p/w500/${props.cover}`} alt={props.name}/>
-        <h3 className="title">{props.name}</h3>
-        <p className="rating">Rating: {props.rating}</p>
+      <div className="MovieCard" onClick={onClick}>
+        <img className="poster" src={`https://image.tmdb.org/t/p/w500/${cover}`} alt={name}/>
+        <h3 className="title">{name}</h3>
+        <p className="rating">Rating: {rating}</p>
       </div>
     </>
   )
 }
 
-export default MovieCard
+export default MovieCard;

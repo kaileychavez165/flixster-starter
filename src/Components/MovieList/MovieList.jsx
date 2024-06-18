@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './MovieList.css';
 import MovieCard from '../MovieCard/MovieCard';
+import Modal from '../Modal/Modal';
 
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
   const [page, setPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedMovie, setSelectedMovie] = useState(null);
 
   const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -91,15 +93,32 @@ const MovieList = () => {
 
       <div className="MovieList">
         {movies.map((movie, index) => (
-          <MovieCard
-            key={index}
+          <div className="movie-item" key={index}>
+            <MovieCard
             cover={movie.poster_path}
             name={movie.title}
             rating={movie.vote_average}
-          />
+            onClick={() => setSelectedMovie(movie)}
+            />
+          </div>
         ))}
         <button onClick={handlePageChange}>Load More</button>
       </div>
+
+      {selectedMovie && (
+        <Modal
+        show={selectedMovie !== null}
+        onClose={() => setSelectedMovie(null)}
+        >
+
+        <h2>{selectedMovie.title}</h2>
+        <img
+          src={`https://image.tmdb.org/t/p/w500/${selectedMovie.poster_path}`}
+          alt={selectedMovie.title}
+          style={{ width: "100%" }}
+        />
+      </Modal>
+    )}
     </>
   );
 };
