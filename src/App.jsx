@@ -6,7 +6,7 @@ import MovieList from './Components/MovieList/MovieList'
 const App = () => {
   return (
     <div className="App">
-      <h1>Flixster</h1>
+      <h1 className="app-header">Flixster</h1>
       <MovieList/>
     </div> 
   )

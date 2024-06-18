@@ -2,27 +2,13 @@
   text-align: center;
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  padding: 20px;
-}
-
-@media (max-width: 600px) {
-  .movie-card {
-    width: 100%;
-  }
-
-  .search-bar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .search-bar form {
-    flex-direction: column;
-  }
+  padding: 50px;
+  margin: 0 0 25px 0;
 }

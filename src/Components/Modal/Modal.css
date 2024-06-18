@@ -9,7 +9,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensure modal is on top of other content */
+    z-index: 1000;
+    animation: fadeIn 0.2s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+       opacity: 0;
+    }
+ 
+    100% {
+       opacity: 1;
+    }
   }
   
   .modal-content {
