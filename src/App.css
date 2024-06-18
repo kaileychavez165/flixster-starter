@@ -1,14 +1,24 @@
 .App {
   text-align: center;
+  background-color: rgb(27, 27, 27);
 }
 
 .app-header {
-  background-color: #282c34;
+  font-family: 'Playwrite CO';
+  font-size: 70px;
+  color: white;
+  text-shadow:
+  0 0 1px #fff,
+  0 0 4px #fff,
+  0 0 6px #fff,
+
+  0 0 50px #ff0095,
+  0 0 75px #ff0095,
+  0 0 95px #ff0095; 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  color: white;
-  padding: 50px;
-  margin: 0 0 25px 0;
+  padding: 50px 50px 25px 50px;
+  margin: 0;
 }

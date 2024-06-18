@@ -92,26 +92,28 @@ const MovieList = () => {
 
   return (
     <>
-      <div className="search-box">
-        <input
-          className="search-input"
-          type="text"
-          placeholder="Search movies..."
-          value={searchQuery}
-          onChange={handleSearchUpdate}
-        />
-        <button className="search-button" onClick={handleSearchClick}>Search</button>
-      </div>
+    <div className="header-content">
+        <div className="search-box">
+          <input 
+            className="search-input"
+            type="text"
+            placeholder="Search movies..."
+            value={searchQuery}
+            onChange={handleSearchUpdate}
+          />
+          <button className="search-button" onClick={handleSearchClick}>Search</button>
+        </div>
 
-      <div className="sort-dropdown">
-        <select value={sortBy} onChange={handleSortChange}>
-          <option value="">Sort by...</option>
-          <option value="vote_average.desc">Sort by rating, descending</option>
-          <option value="primary_release_date.desc">Sort by date, descending</option>
-          <option value="title.asc">Sort by alphabetical order</option>
-        </select>
-      </div>
-
+        <div className="sort-dropdown">
+          <select value={sortBy} onChange={handleSortChange}>
+            <option value="">Sort by...</option>
+            <option value="vote_average.desc">Sort by rating, descending</option>
+            <option value="primary_release_date.desc">Sort by date, descending</option>
+            <option value="title.asc">Sort by alphabetical order</option>
+          </select>
+        </div>
+    </div>
+    
       <div className="MovieList">
         {movies.map((movie, index) => (
           <div className="movie-item" key={index}>
@@ -123,8 +125,14 @@ const MovieList = () => {
             />
           </div>
         ))}
-        <button onClick={handlePageChange}>Load More</button>
       </div>
+
+      <button className="load-more-button" onClick={handlePageChange}>Load More</button>
+
+      <footer className="footer">
+        Lights, Camera, Action!
+        <p>© 2024 Flixster</p>
+      </footer>
 
       {selectedMovie && (
         <Modal
