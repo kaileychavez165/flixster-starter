@@ -24,6 +24,7 @@
   }
   
   .modal-content {
+    font-family: 'DM Sans';
     background: white;
     padding: 20px;
     border-radius: 15px;
@@ -55,4 +56,24 @@
     transform: scale(1.05);
     color: white;
     background-color: #700042;
+  }
+
+  h2 {
+    color: #700042;
+    font-weight: 800;
+    font-size: 35px;
+    margin: 0 0 15px 0;
+  }
+
+  img {
+    border-radius: 15px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .modal-intros {
+    color: #b3036a;
+    font-size: 18px;
   }

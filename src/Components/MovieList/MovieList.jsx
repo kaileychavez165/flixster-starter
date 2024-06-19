@@ -114,6 +114,8 @@ const MovieList = () => {
         </div>
     </div>
     
+  
+
       <div className="MovieList">
         {movies.map((movie, index) => (
           <div className="movie-item" key={index}>
@@ -131,7 +133,11 @@ const MovieList = () => {
 
       <footer className="footer">
         Lights, Camera, Action!
-        <p>© 2024 Flixster</p>
+        <p>© 2024 Flixster, Kailey Chavez</p>
+        <div className="links">
+          <p><a className="page-links" href="https://www.themoviedb.org/about?language=en-US#:~:text=The%20Movie%20Database%20(TMDB)%20is,we're%20incredibly%20proud%20of.">ABOUT</a></p>
+          <p><a className="page-links" href="https://www.linkedin.com/in/kaileychavez165">CONTACT</a></p>
+        </div>
       </footer>
 
       {selectedMovie && (
@@ -146,8 +152,8 @@ const MovieList = () => {
           alt={selectedMovie.title}
           style={{ width: "100%" }}
         />
-        <p><strong>Release Date: </strong>{selectedMovie.release_date}</p>
-        <p><strong>Overview: </strong>{selectedMovie.overview}</p>
+        <p><strong className="modal-intros">Release Date: </strong>{selectedMovie.release_date}</p>
+        <p><strong className="modal-intros">Overview: </strong>{selectedMovie.overview}</p>
       </Modal>
     )}
     </>

@@ -1,31 +1,40 @@
 .MovieCard {
     max-width: 300px;
+    min-height: 610px;
     transition: transform 0.2s;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgb(21, 21, 21);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 50px;
 }
 
 .MovieCard h3 {
     color: #ffa4d9;
     font-size: 20px;
     padding: 0 20px 0 20px;
+    margin: 35px 0 0 0;
 }
 
 .MovieCard p {
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     padding: 0 0 20px 0;
 }
 
 .MovieCard:hover {
     transform: scale(1.05);
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, 
-    rgba(240, 46, 170, 0.3) 10px 10px, 
-    rgba(240, 46, 170, 0.2) 15px 15px, 
-    rgba(240, 46, 170, 0.1) 20px 20px, 
-    rgba(240, 46, 170, 0.05) 25px 25px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, 
+    rgba(240, 46, 170, 0.3) 0px 10px, 
+    rgba(240, 46, 170, 0.2) 0px 15px, 
+    rgba(240, 46, 170, 0.1) 0px 20px, 
+    rgba(240, 46, 170, 0.05) 0px 25px;
 }
 
 .poster {
     width: 100%;
+    color: white; 
+    font-weight: 600;
+    text-align: center;
 }
 
 .title {

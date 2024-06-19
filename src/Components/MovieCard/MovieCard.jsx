@@ -7,7 +7,7 @@ const MovieCard = ({cover, name, rating, onClick}) => {
       <div className="MovieCard" onClick={onClick}>
         <img className="poster" src={`https://image.tmdb.org/t/p/w500/${cover}`} alt={name}/>
         <h3 className="title">{name}</h3>
-        <p className="rating">Rating: {rating}</p>
+        <p className="rating">Rating: {rating} / 10</p>
       </div>
     </>
   )
