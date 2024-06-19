@@ -45,32 +45,39 @@ Deployed Application (optional): [Flixster Deployed Site](https://flixster-unit-
 
 ### Walkthrough Video
 
-`<div>
-    <a href="https://www.loom.com/share/f30a435e6cc94a6b8714ee4a6df8d603">
+<div>
+    <a href="https://www.loom.com/share/c7cf9a835aa34c4198b41cd25319e816">
       <p>Flixster - Kailey Chavez - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/f30a435e6cc94a6b8714ee4a6df8d603">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f30a435e6cc94a6b8714ee4a6df8d603-with-play.gif">
+    <a href="https://www.loom.com/share/c7cf9a835aa34c4198b41cd25319e816">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/c7cf9a835aa34c4198b41cd25319e816-with-play.gif">
     </a>
-  </div>`
+</div>
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Yes, I did feel fairly prepared.
+Overall, I did feel prepared to complete the assignment with what was discussed in our labs and additional one-on-one support from the CodePath instructors. I did stumble
+a bit in creating the functionality (search, load more, and sort) for the website, but I was able to gain more understanding through the unit review session and code-along 
+examples during class.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-I would have worked more on styling.
+If I had more time, I would have definitely liked to have worked more on styling. I left styling until the end, which is something that I think was a good idea since it allowed me to
+focus more on developing the funcitonality of the website, which was a really time-consuming task for me. I would have also liked to have explored developing additional stretch features,
+especially the embedded trailer in the modal. In terms of changing the way my project responded to a certain event, I would have liked for it to have been able to sort the movie results once
+a search had been completed; it appears as if something might have been wrong with the API endpoint that was not allowing for movies to be sorted once a query was made.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-I received great feedback regarding styling.
+My project demo went great! I received positive feedback on my styling, which made me happy because I was proud of it; this also encouraged me to try to improve my styling to give the
+website a more cohesive feel. Fortunately, everything went as planned during my project demo; I had completed the functionality of the website by this point, which was the major task at hand.
+I would love to work on implementing more stretch features, like my peers did (Anita, Kiahna, and Chris).
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+- No open-source libraries were used, but StackOverflow, YouTube, and other online resources for CSS and HTML information were used.
 
 ### Shout out
 
