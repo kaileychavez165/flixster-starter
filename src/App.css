@@ -5,7 +5,7 @@
 
 .app-header {
   font-family: 'Playwrite CO';
-  font-size: 70px;
+  font-size: 80px;
   color: white;
   text-shadow:
   0 0 1px #fff,
@@ -21,4 +21,16 @@
   justify-content: space-evenly;
   padding: 50px 50px 25px 50px;
   margin: 0;
+}
+
+@media screen and (max-width: 680px) {
+  .app-header {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .app-header {
+    font-size: 65px;
+  }
 }

@@ -8,7 +8,7 @@ const MovieList = () => {
   const [page, setPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedMovie, setSelectedMovie] = useState(null);
-  const [sortBy, setSortBy] = useState(""); // State for sorting criteria
+  const [sortBy, setSortBy] = useState("");
 
   const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -92,6 +92,7 @@ const MovieList = () => {
 
   return (
     <>
+    <hr className="rounded-divider"></hr>
     <div className="header-content">
         <div className="search-box">
           <input 
@@ -114,7 +115,7 @@ const MovieList = () => {
         </div>
     </div>
     
-  
+    <div className="main-page-title"><h2><span className="title-emphasis">—</span> BROWSE MOVIES <span className="title-emphasis">—</span></h2></div>
 
       <div className="MovieList">
         {movies.map((movie, index) => (
