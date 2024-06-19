@@ -47,12 +47,12 @@ Deployed Application (optional): [Flixster Deployed Site](https://flixster-unit-
 
 <div>
     <a href="https://www.loom.com/share/c7cf9a835aa34c4198b41cd25319e816">
-      <p>Flixster - Kailey Chavez - Watch Video</p>
+      <p>Flixster - Unit 3 - Kailey Chavez - Watch Video</p>
     </a>
     <a href="https://www.loom.com/share/c7cf9a835aa34c4198b41cd25319e816">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/c7cf9a835aa34c4198b41cd25319e816-with-play.gif">
     </a>
-</div>
+  </div>
 
 ### Reflection
 
